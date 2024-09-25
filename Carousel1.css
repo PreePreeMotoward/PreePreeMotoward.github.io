@@ -9,6 +9,7 @@
     margin: 0 auto;
     width: 100%;
     max-width: 1200px;
+    margin-top: 100px; /* Adjusted to prevent content from overlapping with the fixed header */
 }
 
 .GOVPHBtn {
@@ -25,6 +26,7 @@
     align-items: center;
 }
 
+/* Updated header to be fixed */
 header {
     background-color: #f0f0f0;
     padding: 10px 20px;
@@ -32,6 +34,12 @@ header {
     justify-content: space-between;
     align-items: center;
     height: 12vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 4px 2px -2px gray;
 }
 /* Adjusting the layout for the login and register buttons */
 .auth-buttons {
@@ -55,7 +63,7 @@ header {
 }
 
 .philippine-time {
-    margin-top: 1vh;
+    margin-top: 2vh;
     font-size: 14px;
     color: #666;
     margin-right: 20px;
@@ -137,7 +145,115 @@ nav {
 }
 
 /* Change content */
-/* Apply to the content wrapper */
+/* Existing General Styles */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Container for the content wrapper */
+.content-wrapper {
+    margin: 0 auto;
+    padding: 20px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+/* Styling for the introductory text */
+.intro-text {
+    font-style: italic;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+/* Layout for text with images */
+.text-with-images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.text-with-images p {
+    flex: 1 1 50%;
+    text-align: justify;
+}
+
+.text-with-images img {
+    flex: 0 0 48%;
+    max-width: 48%; /* Ensures images fit nicely within the space */
+    height: auto;
+    object-fit: cover;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Additional adjustments for alignment */
+.left-image {
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.right-image {
+    float: right;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+    .text-with-images {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .text-with-images p,
+    .text-with-images img {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+}
+/* Social Media Buttons Styling */
+.social-buttons {
+    margin-top: 20px; /* Adjust spacing as needed */
+    text-align: center; /* Center the buttons */
+}
+
+.social-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 0 5px;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.facebook {
+    background-color: #3b5998;
+    float: left;
+}
+
+.messenger {
+    background-color: #0084ff;
+    float: left;
+}
+
+.twitter {
+    background-color: #1da1f2;
+
+}
+
+.social-button:hover {
+    opacity: 0.8;
+}
+
 
 
 

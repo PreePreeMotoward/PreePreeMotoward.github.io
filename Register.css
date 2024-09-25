@@ -6,17 +6,19 @@
     font-family: Arial, sans-serif;
 }
 
-.content-wrapper {
-    margin: 0 auto;
-    width: 100%;
-    max-width: 1200px;
-}
 
 body {
     font-family: Arial, sans-serif; /* Already set globally */
 }
 
 /* Header Section */
+.content-wrapper {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 100px; /* Adjusted to prevent content from overlapping with the fixed header */
+}
+
 .GOVPHBtn {
     color: #000000;
     display: inline-block;
@@ -31,6 +33,7 @@ body {
     align-items: center;
 }
 
+/* Updated header to be fixed */
 header {
     background-color: #f0f0f0;
     padding: 10px 20px;
@@ -38,6 +41,12 @@ header {
     justify-content: space-between;
     align-items: center;
     height: 12vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 4px 2px -2px gray;
 }
 
 .auth-buttons {
@@ -61,7 +70,7 @@ header {
 }
 
 .philippine-time {
-    margin-top: 1vh;
+    margin-top: 2vh;
     font-size: 14px;
     color: #666;
     margin-right: 20px;
@@ -107,6 +116,19 @@ nav {
     align-items: center;
     margin-top: 2vh;
     margin-right: 2vh;
+}
+
+.search-bar input[type="text"] {
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px 0 0 5px;
+    border-radius: 5px;
+}
+.search-bar {
+    margin-bottom: 20px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
 }
 
 .search-bar input[type="text"] {

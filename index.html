@@ -44,64 +44,113 @@
                 
         </header>
         <!-- Banner Section -->
-        <div class="philippine-time">
+        <div class="philippine-time fade-in-section">
             <p>Philippine Standard Time: Sunday, September 22, 2024, 2:00 PM</p>
         </div>
     
-        <section class="banner">
+        <section class="banner fade-in-section">
             <img src="bannermain.png" alt="PESO Banner">
         </section>
         
 
-        <p class="quote">"We provide free employment facilitation services and other information on job opportunities for Davao Region constituents."</p>
+        <p class="quote fade-in-section">"We provide free employment facilitation services and other information on job opportunities for Davao Region constituents."</p>
 
-        <!-- Carousel Section -->
-        <section class="carousel">
-            <div class="carousel-container">
-                <div class="carousel-slide active">
-                    <a href="Carousel1.html">
-                        <img src="CarouselMain1.jpg" alt="Carousel Image 1">
-                    </a>
-                    <div class="carousel-text">"Event 1 Description"</div>
-                </div>
-                <div class="carousel-slide">
-                    <a href="link-to-event2.html">
-                        <img src="CarouselMain2.jpg" alt="Carousel Image 2">
-                    </a>
-                    <div class="carousel-text">"Event 2 Description"</div>
-                </div>
-                <div class="carousel-slide">
-                    <a href="link-to-event3.html">
-                        <img src="CarouselMain3.png" alt="Carousel Image 3">
-                    </a>
-                    <div class="carousel-text">"Event 3 Description"</div>
-                </div>
-                <div class="carousel-slide">
-                    <a href="link-to-event4.html">
-                        <img src="CarouselMain4.png" alt="Carousel Image 4">
-                    </a>
-                    <div class="carousel-text">"Event 4 Description"</div>
-                </div>
-                <div class="carousel-slide">
-                    <a href="link-to-event5.html">
-                        <img src="CarouselMain5.jpg" alt="Carousel Image 5">
-                    </a>
-                    <div class="carousel-text">"Event 5 Description"</div>
-                </div>
-                <div class="carousel-slide">
-                    <a href="link-to-event6.html">
-                        <img src="CarouselMain6.jpg" alt="Carousel Image 6">
-                    </a>
-                    <div class="carousel-text">"Event 6 Description"</div>
-                </div>
+       <!-- Carousel Section -->
+<section class="carousel fade-in-section">
+    <div class="carousel-container">
+        <!-- Slide 1 -->
+        <div class="carousel-slide active">
+            <a href="Carousel1.html">
+                <img src="CarouselMain1.jpg" alt="Carousel Image 1">
+            </a>
+            <div class="carousel-text-container">
+                <span class="carousel-tag">NEWS</span>
+                <div class="carousel-text">TESDA TAPS DAVAO CITY PESO FOR TECH-VOC DAY JOB FAIR</div>
+                <div class="carousel-date">September 11, 2023</div>
             </div>
-        
-            <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
-            <button class="next" onclick="moveSlide(1)">&#10095;</button>
-        </section>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="carousel-slide">
+            <a href="Carousel2.html">
+                <img src="CarouselMain2.jpg" alt="Carousel Image 2">
+            </a>
+            <div class="carousel-text-container">
+                <span class="carousel-tag">NEWS</span>
+                <div class="carousel-text">JOB FAIR SUMMARY: MAY</div>
+                <div class="carousel-date">June 29, 2023</div>
+            </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="carousel-slide">
+            <a href="Carousel3.html">
+                <img src="CarouselMain3.png" alt="Carousel Image 3">
+            </a>
+            <div class="carousel-text-container">
+                <span class="carousel-tag">NEWS</span>
+                <div class="carousel-text">PASIDUNGOG: A TRIBUTE TO CORPORATE SOCIAL RESPONSIBILITY</div>
+                <div class="carousel-date">May 16, 2023</div>
+            </div>
+        </div>
+
+        <!-- Slide 4 -->
+        <div class="carousel-slide">
+            <a href="Carousel4.html">
+                <img src="CarouselMain4.png" alt="Carousel Image 4">
+            </a>
+            <div class="carousel-text-container">
+                <span class="carousel-tag">NEWS</span>
+                <div class="carousel-text">PESO AND ROTARACT CLUB OF DAVAO CITY TEAM UP FOR EMPLOYMENT</div>
+                <div class="carousel-date">April 13, 2023</div>
+            </div>
+        </div>
+
+        <!-- Slide 5 -->
+        <div class="carousel-slide">
+            <a href="Carousel5.html">
+                <img src="CarouselMain5.jpg" alt="Carousel Image 5">
+            </a>
+            <div class="carousel-text-container">
+                <span class="carousel-tag">NEWS</span>
+                <div class="carousel-text">20 APPLICANTS HOTS AT UM JOB FAIR</div>
+                <div class="carousel-date">April 4, 2023</div>
+            </div>
+        </div>
+
+        <!-- Slide 6 -->
+        <div class="carousel-slide">
+            <a href="Carousel6.html">
+                <img src="CarouselMain6.jpg" alt="Carousel Image 6">
+            </a>
+            <div class="carousel-text-container">
+                <span class="carousel-tag">NEWS</span>
+                <div class="carousel-text">DAVAO CITY PESO PARTNERS WITH COUNCILOR ENZO VILLAFUERTE FOR A JOB FAIR SERIES IN DISTRICT 3</div>
+                <div class="carousel-date">March 30, 2023</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation buttons -->
+    <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+    <button class="next" onclick="moveSlide(1)">&#10095;</button>
+
+    <!-- Indicator Dots -->
+    <div class="carousel-indicators">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>
+    </div>
+</section>
+
+    
+
 
        <!-- Call-to-Action Section -->
-       <section class="cta">
+       <section class="cta fade-in-section">
         <div class="cta-item">
             <label class="Job-Tips">Job Tips</label>
             <img src="v6.jpg" alt="Placeholder Video1" class="cta-image job-tips-image">
@@ -125,7 +174,7 @@
 
         <!-- Job Listings Section -->
 <div style="text-align: center; background-color: #000000; padding: 1px;"></div> 
-<section class="job-listings">
+<section class="job-listings fade-in-section">
     <div style="text-align: center; background-color: #00ccff; padding: 10px;">
         <h2 style="color: #fff;">SEARCH AVAILABLE DAVAO CITY JOBS HERE</h2>
     </div>
@@ -173,7 +222,7 @@
 </section>
 
        <!-- Footer Section -->
-<footer class="gov-footer">
+       <footer class="gov-footer fade-in-section">
     <div class="footer-content">
         <!-- Left section: Republic of the Philippines -->
         <div class="footer-section">
@@ -209,8 +258,6 @@
     </div>
 </footer>
 
-
-    
     <script src="app.js"></script>
 </body>
 </html>
